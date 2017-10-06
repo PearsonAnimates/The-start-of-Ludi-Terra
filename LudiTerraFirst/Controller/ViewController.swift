@@ -17,10 +17,12 @@ class ViewController: UIViewController
         if ( firstButton.backgroundColor == .orange)
         {
             firstButton.backgroundColor = .black
+            firstButton.setTitleColor(.orange, for: .normal)
         }
         else
         {
             firstButton.backgroundColor = .orange
+            firstButton.setTitleColor(.black, for: .normal)
         }
         view.backgroundColor = createRandomColor()
     }
